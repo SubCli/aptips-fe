@@ -8,6 +8,7 @@ function path(root: string, sublink: string)
 const ROOTS_AUTH = '/auth';
 const ROOTS_DASHBOARD = '/dashboard';
 const ROOTS_SUI = '/sui';
+const ROOTS_DONATION = '/donation-link-management';
 
 // ----------------------------------------------------------------------
 
@@ -95,11 +96,12 @@ export const PATH_DASHBOARD = {
 
 export const SUI_DONA_PATH = {
   root: ROOTS_SUI,
-  new: path(ROOTS_SUI, '/new'),
+  new: path(ROOTS_DONATION, '/new'),
   manager: {
     root: path(ROOTS_SUI, '/manager'),
     link: path(ROOTS_SUI, '/manager/link-donation'),
-    detail: path(ROOTS_SUI, '/manager/detail-link/detail-link')
+    detail: path(ROOTS_SUI, '/manager/detail-link'),
+    form: path(ROOTS_SUI, '/manager/form-donation'),
   }
 }
 
